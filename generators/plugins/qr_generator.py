@@ -5,7 +5,7 @@ from typing import Callable
 
 import customtkinter as ctk
 import qrcode
-from PIL import Image, ImageTk
+from PIL import Image
 
 from generators.base import GeneratorContext, GeneratorMeta, GeneratorPlugin
 from utils.paths import exports_dir
@@ -186,7 +186,7 @@ class QRGeneratorFrame(ctk.CTkFrame):
         img = qr.make_image(fill_color="black", back_color="white").convert("RGBA")
         img.thumbnail((300, 300), Image.Resampling.LANCZOS)
 
-        photo = ImageTk.PhotoImage(img)
+        photo = ctk.CTkImage(img, size=(300, 300))
         self.image_label.configure(image=photo, text="")
         self.image_label.image = photo  # keep reference
 
