@@ -1,0 +1,24 @@
+{
+  "favorites": [],
+  "recent": [
+    "color_palette"
+  ],
+  "export_history": [
+    {
+      "generator": "readme",
+      "file": "My Awesome Project.md"
+    },
+    {
+      "generator": "qr",
+      "file": "qr_code.png"
+    },
+    {
+      "generator": "qr",
+      "file": "qr_code.png"
+    },
+    {
+      "generator": "invoice",
+      "file": "invoice_001.pdf"
+    }
+  ]
+}
