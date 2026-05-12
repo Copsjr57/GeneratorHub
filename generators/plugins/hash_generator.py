@@ -318,3 +318,6 @@ class HashGeneratorPlugin:
         from utils.storage import AppStorage
         ctx = GeneratorContext(AppStorage(), toast_host)
         return HashGeneratorFrame(master, ctx)
+
+
+PLUGIN = HashGeneratorPlugin()
